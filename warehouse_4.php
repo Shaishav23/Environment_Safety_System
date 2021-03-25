@@ -333,7 +333,7 @@ if(isset($_SESSION["cart_session"]))
 		<!-- End Main -->
 		<!-- Begin Footer -->
 		<div id="footer">
-			<div class="boxes"
+			<div class="boxes">
 				<!-- Begin Shell -->
 				<div class="shell">
 					<div class="box post-box">
