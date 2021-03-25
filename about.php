@@ -236,8 +236,8 @@ if(isset($_SESSION["cart_session"]))
 				<div class="post">
 					<h2>Welcome!</h2>
 					<img src="images/main-logo.png" alt="Post Image" height="160" width="260"/>
-					You can be confident when you're shopping online with Environment Safety System. Our Secure online shopping website encrypts your personal and financial information to ensure your order information is protected.We use industry standard 128-bit encryption. Our Secure online shopping website locks all critical information passed from you to us,
-                   such as personal information, in an encrypted envelope, making it extremely difficult for this information to be intercepted.. <a href="#" class="more" title="Read More">Read More</a></p>
+					To save our nature and living creatures from hazardous elements and recycle and reproduce them in order to lead a healthy life and protect nature. The scope is to supply approaches and strategies which have proved to be the suitable when assessing the  waste system of the defined region. 
+					The Environment pollution will reduce, and the solid waste will recycle or deployed. The fundamental aims of the Basel Convention are the control and reduction of trans boundary movements of hazardous and other wastes To save our nature and living creatures from hazardous elements and recycle and reproduce them in order to lead a healthy life and protect nature. The scope of the project is to supply approaches and strategies which have proved to be the suitable when assessing the  waste system of the defined region. This collection will reduce the waste from the household, company, industries, city, etc. which are collected by the local scrap dealers. The Environment pollution will reduce, and the solid waste will recycle or deployed. The fundamental aims of the Basel Convention are the control and reduction of trans boundary movements of hazardous and other wastes. <a href="#" class="more" title="Read More">Read More</a></p>
 					<div class="cl">&nbsp;</div>
 				</div>
 				
