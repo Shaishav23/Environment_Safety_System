@@ -1,13 +1,14 @@
 -- phpMyAdmin SQL Dump
--- version 4.6.4
+-- version 5.1.0
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 07, 2016 at 12:09 PM
--- Server version: 5.7.14
--- PHP Version: 5.6.25
+-- Generation Time: Mar 25, 2021 at 08:36 PM
+-- Server version: 10.4.18-MariaDB
+-- PHP Version: 8.0.3
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+START TRANSACTION;
 SET time_zone = "+00:00";
 
 
@@ -38,10 +39,10 @@ CREATE TABLE `category` (
 --
 
 INSERT INTO `category` (`Category_ID`, `Category_Name`, `Discription`, `Picture`) VALUES
-(42, 'Fruits', 'Fressh Fruits', 'l.png'),
-(43, 'Baverages', 'Soda And Soft Drinks With Ice-Cream', 'b.png'),
-(44, 'Clothes', 'Clothes Dresses', '55.png'),
-(45, 'Cleaning Materials ', 'Toilet And House Cleanning', 'ab.png');
+(42, 'Plastic', 'Plastic Recycled Products', 'plastic1.jpeg'),
+(43, 'Paper', 'Paper Recycled Products', 'paper4.jpeg'),
+(44, 'Glass', 'Glass Recycled Products', 'glass1.jpeg'),
+(45, 'Wood', 'Wood Recycled Products', 'wood5.jpeg');
 
 -- --------------------------------------------------------
 
@@ -53,7 +54,7 @@ CREATE TABLE `chatting` (
   `id` int(11) NOT NULL,
   `user` varchar(60) NOT NULL,
   `message` varchar(100) NOT NULL,
-  `date_time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `date_time` timestamp NOT NULL DEFAULT current_timestamp(),
   `ip_address` varchar(40) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
@@ -83,11 +84,11 @@ CREATE TABLE `clients` (
   `id` int(10) UNSIGNED NOT NULL,
   `name` varchar(40) DEFAULT NULL,
   `contact` varchar(40) DEFAULT NULL,
-  `address` text,
+  `address` text DEFAULT NULL,
   `phone` varchar(20) DEFAULT NULL,
   `email` varchar(80) DEFAULT NULL,
   `website` varchar(40) DEFAULT NULL,
-  `comments` text
+  `comments` text DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
@@ -109,8 +110,8 @@ CREATE TABLE `contact` (
 --
 
 INSERT INTO `contact` (`contact_id`, `Name`, `Email`, `Phone`, `Subject`) VALUES
-(7, 'A.rahman Osman', 'Mucaad33@gmail.com', '252634188000', ' i like this Shopping site '),
-(8, 'Abdirahman Ali Abdi', 'jananalibritish@gmail.com', '0252634138440', ' What a nice shopping site');
+(7, 'Dhara Sheth', 'dhara.sheth60@gmail.com', '252634188000', ' i like this Shopping site '),
+(8, 'Shaishav Shah', 'shaishavshah60@gmail.com', '0252634138440', ' What a nice shopping site');
 
 -- --------------------------------------------------------
 
@@ -181,10 +182,10 @@ CREATE TABLE `invoices` (
   `client_website` int(10) UNSIGNED DEFAULT NULL,
   `client_comments` int(10) UNSIGNED DEFAULT NULL,
   `subtotal` decimal(9,2) DEFAULT NULL,
-  `discount` decimal(4,2) DEFAULT '0.00',
+  `discount` decimal(4,2) DEFAULT 0.00,
   `tax` decimal(9,2) DEFAULT NULL,
-  `total` decimal(9,2) DEFAULT '0.00',
-  `comments` text
+  `total` decimal(9,2) DEFAULT 0.00,
+  `comments` text DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
@@ -197,9 +198,9 @@ CREATE TABLE `invoice_items` (
   `id` int(10) UNSIGNED NOT NULL,
   `invoice` int(10) UNSIGNED DEFAULT NULL,
   `item` varchar(200) DEFAULT NULL,
-  `unit_price` decimal(9,2) DEFAULT '0.00',
-  `qty` decimal(9,3) DEFAULT '1.000',
-  `tax` decimal(4,2) DEFAULT '0.00',
+  `unit_price` decimal(9,2) DEFAULT 0.00,
+  `qty` decimal(9,3) DEFAULT 1.000,
+  `tax` decimal(4,2) DEFAULT 0.00,
   `price` decimal(9,2) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
@@ -214,9 +215,9 @@ CREATE TABLE `membership_grouppermissions` (
   `groupID` int(11) DEFAULT NULL,
   `tableName` varchar(100) DEFAULT NULL,
   `allowInsert` tinyint(4) DEFAULT NULL,
-  `allowView` tinyint(4) NOT NULL DEFAULT '0',
-  `allowEdit` tinyint(4) NOT NULL DEFAULT '0',
-  `allowDelete` tinyint(4) NOT NULL DEFAULT '0'
+  `allowView` tinyint(4) NOT NULL DEFAULT 0,
+  `allowEdit` tinyint(4) NOT NULL DEFAULT 0,
+  `allowDelete` tinyint(4) NOT NULL DEFAULT 0
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
@@ -243,7 +244,7 @@ INSERT INTO `membership_grouppermissions` (`permissionID`, `groupID`, `tableName
 CREATE TABLE `membership_groups` (
   `groupID` int(10) UNSIGNED NOT NULL,
   `name` varchar(20) DEFAULT NULL,
-  `description` text,
+  `description` text DEFAULT NULL,
   `allowSignup` tinyint(4) DEFAULT NULL,
   `needsApproval` tinyint(4) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
@@ -287,11 +288,11 @@ CREATE TABLE `membership_users` (
   `groupID` int(10) UNSIGNED DEFAULT NULL,
   `isBanned` tinyint(4) DEFAULT NULL,
   `isApproved` tinyint(4) DEFAULT NULL,
-  `custom1` text,
-  `custom2` text,
-  `custom3` text,
-  `custom4` text,
-  `comments` text
+  `custom1` text DEFAULT NULL,
+  `custom2` text DEFAULT NULL,
+  `custom3` text DEFAULT NULL,
+  `custom4` text DEFAULT NULL,
+  `comments` text DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
@@ -354,15 +355,25 @@ CREATE TABLE `product` (
 --
 
 INSERT INTO `product` (`Product_ID`, `productName`, `Category_ID`, `Model`, `Type`, `Warehouse_ID`, `Description`, `Price`, `Picture`) VALUES
-(1, 'Orange', 42, 'Orange202', 'Orage Arabsiyo', 7, 'Waa Liin TII Arabsiyo Oo Aad Yaabi !!', '3', 'l.png'),
-(2, 'Apple', 42, 'apple23', 'fruits', 7, 'for eating', '1', 'k.png'),
-(3, 'grapes', 42, 'grap123', 'grape fruit', 7, 'food stuff', '2', 'e.png'),
-(4, 'pepsi', 42, 'bav121', 'drinks', 8, 'soda drinks', '1', 'b.png'),
-(5, 'Coca', 43, 'coc2232', 'drinks', 8, 'soda drinks', '1', 'a.png'),
-(6, 'Rani', 43, 'ran12', 'drinks', 8, 'IS DRINKS', '1', 'a.png'),
-(7, 'fairy', 45, 'fairy12', 'cleaning', 9, 'for cleaning house', '2.5', 'ab.png'),
-(8, 'harpic', 45, 'ahr980', 'cleaning', 9, 'for cleaning house', '2', 'bb.png'),
-(10, 'balayee', 45, '545ss', 'cleaning', 9, 'for cleaning house', '3', 'bb.png');
+(11, 'Shoes', 42, 'Shoes 1', 'Shoes', 7, 'Shoes from plastic', '1000', '1616675160_plastic1.jpeg'),
+(12, 'Shoes_2', 42, 'Shoes 2', 'Shoes', 7, 'Shoes from plastic', '900', '1616675460_plastic2.jpeg'),
+(13, 'Paper Clock', 43, 'paper 2', 'Clock', 8, 'Clock from Paper', '500', '1616675580_paper2.jpeg'),
+(14, 'Paper Clock', 43, 'paper 3', 'Clock', 8, 'Clock from Paper', '650', '1616675640_paper3.jpeg'),
+(15, 'Paper Show-piece', 43, 'paper 4', 'Show-piece', 8, 'Showpiec from Paper', '150', '1616675760_paper4.jpeg'),
+(16, 'Water Jug set', 44, 'glass 1', 'Water set', 9, 'jug from glass', '400', '1616675880_glass1.jpeg'),
+(17, 'Glass Tray', 44, 'glass 2', 'Tray', 9, 'Tary from glass', '750', '1616676000_glass2.jpeg'),
+(18, 'Glass Pot', 44, 'glass 2', 'Flower-pot', 9, 'Pot from glass', '500', '1616676060_glass3.jpeg'),
+(19, 'Wood Candles', 45, 'wood 1', 'Wood Candle', 10, 'Candle From wood', '1010', '1616676240_wood1.jpeg'),
+(20, 'Pen Stand', 45, 'wood 2', 'pen stand', 10, 'Stand from wood', '679', '1616676360_wood2.jpeg'),
+(21, 'Book shelf', 45, 'wood 3', 'book shelf', 10, 'shelf from wood', '2000', '1616676480_wood3.jpeg'),
+(22, 'Wood Combo- container, lamp, Book Shelf', 45, 'wood 4', 'wood combo', 10, 'combo from wood ', '3000', '1616676780_wood4.jpeg'),
+(23, 'Wooden Phone Stand', 45, 'wood 5', 'phone stand', 10, 'phn Stand from wood', '999', '1616676900_wood5.jpeg'),
+(24, 'Wood Award', 45, 'wood 6', 'Award', 10, 'Award from wood', '399', '1616697480_Wood_Award.jfif'),
+(25, 'Wood Stool', 45, 'wood 6', 'Stool', 10, 'Stool from wood', '799', '1616698140_Wood_Stool.jfif'),
+(26, 'Glass Plates', 44, 'glass 3', 'Plates', 9, 'Plate from glass', '2399', '1616698260_glass_plates.jpg'),
+(27, 'Paper purse', 43, 'paper 1', 'purse', 8, 'purse from paper', '2199', '1616698440_Paper_Purse.jpg'),
+(28, 'Wood Jewellery', 45, 'wood 7', 'Jewellery', 10, 'Jewellery form wood', '1699', '1616698860_Wood_Jewelry_Rackjfif.jfif'),
+(29, 'Paper Bag', 43, 'paper 5', 'Bag', 8, 'Bag from Paper', '100', '1616698980_Paper_Bag.jfif');
 
 -- --------------------------------------------------------
 
@@ -410,10 +421,10 @@ CREATE TABLE `warehouse` (
 --
 
 INSERT INTO `warehouse` (`Warehouse_ID`, `Country`, `City`, `Address`, `PostalCode`, `Email`, `Warehouse`) VALUES
-(7, '', 'Hargeisa', 'Hargeisa', 'Hr103', 'dollarstore@dollor.com', 'Som Food Stuff'),
-(8, '', 'Hargeisa', 'Hargeisa', 'Hr202', 'ominco@omar.com', 'Som Bavarages'),
-(9, '', 'Arabsiyo', 'Arabsiyo', 'Ar271', 'somstore@somestore.com', 'Som Home Staff'),
-(10, '', 'Hargeisa', 'Hargeisa', 'Hr302', 'nation@gmail.com', 'Som Clothes');
+(7, '', 'Ahmedabad', 'Ahmedabad', '380001', 'dollarstore@dollor.com', 'Plastic'),
+(8, '', 'Ahmedabad', 'Ahmedabad', '380002', 'ominco@omar.com', 'Paper'),
+(9, '', 'Ahmedabad', 'Ahmedabad', '380003', 'somstore@somestore.com', 'Glass'),
+(10, '', 'Ahmedabad', 'Ahmedabad', '380004', 'nation@gmail.com', 'Wood');
 
 --
 -- Indexes for dumped tables
@@ -535,76 +546,91 @@ ALTER TABLE `warehouse`
 --
 ALTER TABLE `category`
   MODIFY `Category_ID` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=46;
+
 --
 -- AUTO_INCREMENT for table `chatting`
 --
 ALTER TABLE `chatting`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
+
 --
 -- AUTO_INCREMENT for table `clients`
 --
 ALTER TABLE `clients`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
+
 --
 -- AUTO_INCREMENT for table `contact`
 --
 ALTER TABLE `contact`
   MODIFY `contact_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+
 --
 -- AUTO_INCREMENT for table `customer`
 --
 ALTER TABLE `customer`
   MODIFY `Cust_Id` int(15) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
+
 --
 -- AUTO_INCREMENT for table `employee`
 --
 ALTER TABLE `employee`
   MODIFY `Employee_ID` int(95) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=53;
+
 --
 -- AUTO_INCREMENT for table `invoices`
 --
 ALTER TABLE `invoices`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
+
 --
 -- AUTO_INCREMENT for table `invoice_items`
 --
 ALTER TABLE `invoice_items`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
+
 --
 -- AUTO_INCREMENT for table `membership_grouppermissions`
 --
 ALTER TABLE `membership_grouppermissions`
   MODIFY `permissionID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+
 --
 -- AUTO_INCREMENT for table `membership_groups`
 --
 ALTER TABLE `membership_groups`
   MODIFY `groupID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+
 --
 -- AUTO_INCREMENT for table `membership_userrecords`
 --
 ALTER TABLE `membership_userrecords`
   MODIFY `recID` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
+
 --
 -- AUTO_INCREMENT for table `payment`
 --
 ALTER TABLE `payment`
-  MODIFY `order_ID` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `order_ID` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+
 --
 -- AUTO_INCREMENT for table `product`
 --
 ALTER TABLE `product`
-  MODIFY `Product_ID` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `Product_ID` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=30;
+
 --
 -- AUTO_INCREMENT for table `tblsongs`
 --
 ALTER TABLE `tblsongs`
   MODIFY `id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=55;
+
 --
 -- AUTO_INCREMENT for table `warehouse`
 --
 ALTER TABLE `warehouse`
   MODIFY `Warehouse_ID` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+
 --
 -- Constraints for dumped tables
 --
@@ -621,6 +647,7 @@ ALTER TABLE `payment`
 ALTER TABLE `product`
   ADD CONSTRAINT `product_ibfk_1` FOREIGN KEY (`Category_ID`) REFERENCES `category` (`Category_ID`),
   ADD CONSTRAINT `product_ibfk_2` FOREIGN KEY (`Warehouse_ID`) REFERENCES `warehouse` (`Warehouse_ID`);
+COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

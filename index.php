@@ -246,9 +246,9 @@ if(isset($_SESSION["cart_session"]))
 			<div class="shell">
 				<ul class="slider-items">
 					<li>
-						<img src="images/moreimagesforwebsite/RRR.jfif" alt="Slide Image" />
+						<img src="images/moreimagesforwebsite/Paper_Eco-Accessories.jpg " alt="Slide Image" />
 						<div class="slide-entry">
-							<h2><span> Recycled Products</span></h2>
+							<h4><span> Products from Paper</span></h4>
 					
 							<a href="products.php" class="button" title="Buy now"><span>Buy now</span></a>
 						</div>
@@ -256,36 +256,36 @@ if(isset($_SESSION["cart_session"]))
 					<li>
 						<img src="images/moreimagesforwebsite/waste-recycling-symbol.jpg" alt="Slide Image" />
 						<div class="slide-entry">
-							<h4><span></span><span class="small"></span> &nbsp; Recycled Products</h4>
+							<!-- <h4><span></span><span class="small"></span> &nbsp; Recycled Products</h4> -->
 							
 							<a href="products.php" class="button" title="Buy now"><span>Buy now</span></a>
 						</div>
 					</li>
 					<li>
-						<img src="images/moreimagesforwebsite/R.png" alt="Slide Image" />
+						<img src="images/moreimagesforwebsite/R.jpg" alt="Slide Image" />
 						<div class="slide-entry">
-							<h3><span></span><span class="small"> </span>Recycled Products<span class="small"></span></h3> 
+							<!-- <h3><span></span><span class="small"> </span>Recycled Products<span class="small"></span></h3>  -->
 					
 						
 							<a href="products.php" class="button" title="Buy now"><span>Buy now</span></a>
 						</div>
 					</li>
 							<li>
-						<img src="images/moreimagesforwebsite/plastic-recycling-symbolsjpg.jpg" alt="Slide Image" />
+						<img src="images/moreimagesforwebsite/Wood_Lights.jpg" alt="Slide Image" />
 						<div class="slide-entry">
-							<h3><span> </span>Recycled Products<span class="small"> </span></h3> 
+							<h4><span> </span>Products from wood <span class="small"> </span></h4> 
 							
 							<a href="products.php" class="button" title="Buy now"><span>Buy now</span></a>
 						</div>
 					</li>
 					<li>
-						<img src="images/moreimagesforwebsite/images.jfif" alt="Slide Image" />
+						<img src="images/moreimagesforwebsite/images.jpg" alt="Slide Image" />
 						<div class="slide-entry">
-							<h4><span></span><span class="small">&amp;</span><span>Recycled Products</span></h4>
+							<!-- <h4><span></span><span class="small">&amp;</span><span>Recycled Products</span></h4> -->
 							<a href="products.php" class="button" title="Buy now"><span>Buy now</span></a>
 						</div>
 					</li>
-					<li>
+					<!-- <li>
 						<img src="images/moreimagesforwebsite/" alt="Slide Image" />
 						<div class="slide-entry">
 							<h3><span></span><span class="small"> </span> Recycled Products</h3> 
@@ -318,7 +318,7 @@ if(isset($_SESSION["cart_session"]))
 							
 							<a href="products.php" class="button" title="Buy now"><span>Buy now</span></a>
 						</div>
-					</li>
+					</li> -->
 				</ul>
 				<div class="cl">&nbsp;</div>
 				<div class="slider-nav">
