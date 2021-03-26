@@ -119,7 +119,7 @@ include("../config.php");
      		
 		</ul>
 	
-		<h3> Suncart Administrator:</h3>
+		<h3> Environment-Safety System Administrator:</h3>
 		<ul class="toggle">
 		    <li class="icn_add_user"><a href="Employee.php">Add Employee</a></li>
 			<li class="icn_photo"><a href="add_product.php">Add Product</a></li>

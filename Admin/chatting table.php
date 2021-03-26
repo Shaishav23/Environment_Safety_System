@@ -98,7 +98,7 @@ include("../session.php");
 <aside id="sidebar" class="column">
 		
 		<hr/>
-		<h3>Suncart:</h3>
+		<h3>Environment-Safety System:</h3>
 		<ul class="toggle">
 		    <li class="icn_settings"><a href="OrderReports.php">Order Report</a></li>
 			<li class="icn_settings"><a href="EmployeeReport.php">Employee Report</a></li>
@@ -107,7 +107,7 @@ include("../session.php");
      		
 		</ul>
 	
-		<h3> Suncart Administrator:</h3>
+		<h3> Environment-Safety System Administrator:</h3>
 		<ul class="toggle">
 		    <li class="icn_add_user"><a href="Employee.php">Add Employee</a></li>
 			<li class="icn_photo"><a href="add_product.php">Add Product</a></li>
@@ -133,7 +133,7 @@ include("../session.php");
 	<section id="main" class="column">
 	
 		
-		<h4 class="alert_info">Welcome To <strong>"Suncart"</strong> Admin Manager As: </h4>
+		<h4 class="alert_info">Welcome To <strong>"Environment-Safety System"</strong> Admin Manager As: </h4>
 		
           <form class="quick_search">
 			<input type="text"  value="Quick Search" onfocus="if(!this._haschanged){this.value=''};this._haschanged=true;">

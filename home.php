@@ -109,7 +109,7 @@ $(document).ready(function() {
 		<div id="header">
 			<!-- Begin Shell -->
 			<div class="shell">
-				<h1 id="logo"><a class="notext" href="#" title="Suncart">Environment Safety System</a></h1>
+				<h1 id="logo"><a class="notext" href="#" title="Environment-Safety System">Environment Safety System</a></h1>
 				<div id="top-nav">
 					<ul>
 						<li><a href="#" title="Login Email"> <span class="janan"> <?php echo "Your Email Is: ". "<i><b>".$login_session."</b></i>" ;?> </span></a></li>

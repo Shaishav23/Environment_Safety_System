@@ -100,7 +100,7 @@ $(document).ready(function() {
 		<div id="header">
 			<!-- Begin Shell -->
 			<div class="shell">
-				<h1 id="logo"><a class="notext" href="index.php" title="Suncart">Suncart</a></h1>
+				<h1 id="logo"><a class="notext" href="index.php" title="Environment-Safety System">Environment-Safety System</a></h1>
 				<div id="top-nav">
 					<ul>
 						<li><a href="contact.php" title="Contact"><span>Contact</span></a></li>

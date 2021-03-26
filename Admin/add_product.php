@@ -358,7 +358,7 @@ $result = mysqli_query($mysqli,"SELECT * FROM product");
       <div id="tab1" class="tab_content">
   <table class="tablesorter" cellspacing="0"> 
 
-			<thead>  <th Colspan="11">  Suncart Product Data Table </th></thead>
+			<thead>  <th Colspan="11">  Environment-Safety System Product Data Table </th></thead>
 		<thead>
 			</tr>
    		      <th>Check</th> 
