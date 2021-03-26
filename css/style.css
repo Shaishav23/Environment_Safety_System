@@ -156,7 +156,7 @@ h1#logo a { width: 300px; height: 69px; background: url('../images/main-logo-1.p
 }
 #navigation  li > a:hover {
     /* css3 animation */
-    -moz-animation-name: animation1;
+    /* -moz-animation-name: animation1;
     -moz-animation-duration: 0.7s;
     -moz-animation-timing-function:linear;
     -moz-animation-iteration-count: infinite;
@@ -172,7 +172,7 @@ h1#logo a { width: 300px; height: 69px; background: url('../images/main-logo-1.p
     -webkit-animation-direction: normal;
     -webkit-animation-delay: 0;
     -webkit-animation-play-state: running;
-    -webkit-animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards; */
 }
 
 
