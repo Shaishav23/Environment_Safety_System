@@ -67,7 +67,7 @@ include("../config.php");
 		<div id="logo-banner">
 		   
 				<div id="logo">
-				<a href="index.php"><img src="images/main-logo.png" alt="" /></a>
+				<a href="index.php"><img src="images/main-logo-1.png" alt="" /></a>
 				</div>
 				
 				<div id="banner">

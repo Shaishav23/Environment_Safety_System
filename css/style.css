@@ -68,7 +68,7 @@ h2 { font-size: 18px; color: #fa5400; border-bottom: 1px solid #c5c4be; margin-b
 #header { width: 100%; position: relative; z-index: 50;  background: #fefefe; }
 
 h1#logo { float: left; display: inline; padding: 3px 0 10px 27px; }
-h1#logo a { width: 300px; height: 69px; background: url('../images/main-logo.png') no-repeat 0 0; display: block;  height: 90px; }
+h1#logo a { width: 300px; height: 69px; background: url('../images/main-logo-1.png') no-repeat 0 0; display: block;  height: 90px; }
 
 #top-nav { float: right; display: inline; padding-top: 36px; padding-right: 13px; }
 #top-nav li { float: left; display: inline; padding-left: 22px; list-style: none; }
