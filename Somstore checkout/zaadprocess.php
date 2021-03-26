@@ -127,30 +127,22 @@ if(isset($_SESSION["cart_session"]))
 							<ul>
 								<li>
 									 <a href="../products.php"> Plastic</a>
-									<div class="dd">
-										
-									</div>
+									
 								</li>
 								
 								<li>
 									 <a href="../products.php"> Paper</a>
-									<div class="dd">
-										
-									</div>
+									
 								</li>
 								
 								<li>
 									<a href="../products.php"> Glass</a>
-									<div class="dd">
-										
-									</div>
+									
 								</li>
 								
 								<li>
 									<a href="../products.php"> Wood</a>
-									<div class="dd">
-										
-									</div>
+									
 								</li>
 								
 							</ul>
