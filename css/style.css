@@ -124,7 +124,7 @@ h1#logo a { width: 300px; height: 69px; background: url('../images/main-logo-1.p
 #navigation li .dd li a { float: left; display: inline; padding-left: 35px; background: #fefefe url('../images/item.png') no-repeat 20px 9px; font-size: 12px; line-height: 24px; word-spacing: 2px; padding-right: 6px; width: 135px; }
 #navigation li .dd li a:hover,
 #navigation li .dd li.pr-active a,
-#navigation li .dd li .dd li a:hover { background: transparent; color: blue;}
+#navigation li .dd li .dd li a:hover { background: transparent; color: #fa5400;}
 #navigation li .dd .dd { left: 176px; top: -8px; padding: 8px 0; }
 #navigation li .dd .dd li a { padding-left: 34px; width: 136px; }
 #navigation li .dd li.pr-active .dd a { background: #fefefe; }
