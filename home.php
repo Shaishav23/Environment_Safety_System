@@ -237,80 +237,80 @@ if(isset($_SESSION["cart_session"]))
 						<!-- Begin Shell -->
 			<div class="shell">
 				<ul class="slider-items">
-					<li>
-						<img src="images/s1.png" alt="Slide Image" />
+				<li>
+						<img src="images/moreimagesforwebsite/Paper_Eco-Accessories.jpg " alt="Slide Image" />
 						<div class="slide-entry">
-							<h2><span> Islamic</span> Woman Cabaya</h2>
+							<h4><span> Products from Paper</span></h4>
 					
 							<a href="products.php" class="button" title="Buy now"><span>Buy now</span></a>
 						</div>
 					</li>
 					<li>
-						<img src="images/s2.png" alt="Slide Image" />
+						<img src="images/moreimagesforwebsite/waste-recycling-symbol.jpg" alt="Slide Image" />
 						<div class="slide-entry">
-							<h4><span>Islamic</span><span class="small"></span> &nbsp; Man Dresses</h4>
+							<!-- <h4><span></span><span class="small"></span> &nbsp; Recycled Products</h4> -->
 							
 							<a href="products.php" class="button" title="Buy now"><span>Buy now</span></a>
 						</div>
 					</li>
 					<li>
-						<img src="images/s3.png" alt="Slide Image" />
+						<img src="images/moreimagesforwebsite/R.jpg" alt="Slide Image" />
 						<div class="slide-entry">
-							<h3><span>Black Suit</span><span class="small"> </span>Dress<span class="small"> And Coats</span></h3> 
+							<!-- <h3><span></span><span class="small"> </span>Recycled Products<span class="small"></span></h3>  -->
 					
 						
 							<a href="products.php" class="button" title="Buy now"><span>Buy now</span></a>
 						</div>
 					</li>
 							<li>
-						<img src="images/s4.png" alt="Slide Image" />
+						<img src="images/moreimagesforwebsite/Wood_Lights.jpg" alt="Slide Image" />
 						<div class="slide-entry">
-							<h3><span> Choose</span><span class="small"> Frush</span>Fruits</h3> 
+							<h4><span> </span>Products from wood <span class="small"> </span></h4> 
 							
 							<a href="products.php" class="button" title="Buy now"><span>Buy now</span></a>
 						</div>
 					</li>
 					<li>
-						<img src="images/s5.png" alt="Slide Image" />
+						<img src="images/moreimagesforwebsite/images.jpg" alt="Slide Image" />
 						<div class="slide-entry">
-							<h4><span>Some Fruits</span><span class="small">&amp;</span><span>Frush</span>Crops</h4>
+							<!-- <h4><span></span><span class="small">&amp;</span><span>Recycled Products</span></h4> -->
 							<a href="products.php" class="button" title="Buy now"><span>Buy now</span></a>
 						</div>
 					</li>
-					<li>
-						<img src="images/s6.png" alt="Slide Image" />
+					<!-- <li>
+						<img src="images/moreimagesforwebsite/" alt="Slide Image" />
 						<div class="slide-entry">
-							<h3><span>Smart Dress</span><span class="small">of </span> Male And Females Suits</h3> 
+							<h3><span></span><span class="small"> </span> Recycled Products</h3> 
 					
 							
 							<a href="products.php" class="button" title="Buy now"><span>Buy now</span></a>
 						</div>
 					</li>
 					<li>
-						<img src="images/s7.png" alt="Slide Image" />
+						<img src="images/moreimagesforwebsite/" alt="Slide Image" />
 						<div class="slide-entry">
-							<h2><span>Woman</span>Dress</h2>
+							<h2><span></span>Recycled Products</h2>
 						
 							<a href="products.php" class="button" title="Buy now"><span>Buy now</span></a>
 						</div>
 					</li>
 					<li>
-						<img src="images/s8.png" alt="Slide Image" />
+						<img src="images/moreimagesforwebsite/" alt="Slide Image" />
 						<div class="slide-entry">
-							<h4><span>Frush</span><span class="small"></span> &nbsp;<span> Food</span>  New Crops</h4>
+							<h4><span></span><span class="small"></span> &nbsp;<span> </span>  Recycled Products</h4>
 							
 							<a href="products.php" class="button" title="Buy now"><span>Buy now</span></a>
 						</div>
 					</li>
 					<li>
-						<img src="images/s9.png" alt="Slide Image" />
+						<img src="images/moreimagesforwebsite/" alt="Slide Image" />
 						<div class="slide-entry">
 					
-							<h4 class="short"><span>Home</span> Cleaning Equipment</h4>
+							<h4 class="short"><span></span> Recycled Productst</h4>
 							
 							<a href="products.php" class="button" title="Buy now"><span>Buy now</span></a>
 						</div>
-					</li>
+					</li> -->
 				</ul>
 				<div class="cl">&nbsp;</div>
 				<div class="slider-nav">
@@ -406,7 +406,7 @@ if(isset($_SESSION["cart_session"]))
 						<a href="products.php" title="Product Link"><img src="images/<?php echo $row['Picture']?>" alt="IMAGES" /></a>
 						<div class="info">
 							<h4><b><?php echo $row['productName']?></b></h4>
-							<span class="number"><span>Price:<big style="color:green">$<?php echo $row['Price']?></big></span></span>
+							<span class="number"><span>Price:<big style="color:green">Rs.<?php echo $row['Price']?></big></span></span>
 					
 							<div class="cl">&nbsp;</div>
 							 
@@ -447,8 +447,8 @@ if(isset($_SESSION["cart_session"]))
 						<h2>Information</h2>
 						<ul>
 							<li><a href="#" title="Privacy Policy">Privacy Policy</a></li>
-							<li><a href="#" title="Contact Us">Contact Us</a></li>
-							<li><a href="#" title="Log In">Log In</a></li>
+							<li><a href="contact.php" title="Contact Us">Contact Us</a></li>
+							<li><a href="Sign In.php" title="Log In">Log In</a></li>
 							<li><a href="#" title="Account">Account</a></li>
 
 						</ul>
@@ -456,10 +456,10 @@ if(isset($_SESSION["cart_session"]))
 					<div class="box last-box">
 						<h2>Categories</h2>
 						<ul>
-							<li><a href="#" title="Paper">Paper</a></li>
-							<li><a href="#" title="Plastic">Plastic</a></li>
-							<li><a href="#" title="Glass">Glass</a></li>
-							<li><a href="#" title="Wood">Wood</a></li>
+							<li><a href="warehouse_1.php" title="Paper">Paper</a></li>
+							<li><a href="warehouse_2.php" title="Plastic">Plastic</a></li>
+							<li><a href="warehouse_3.php" title="Glass">Glass</a></li>
+							<li><a href="warehouse_4.php" title="Wood">Wood</a></li>
 						</ul>
 					</div>
 					<div class="cl">&nbsp;</div>

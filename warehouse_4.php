@@ -350,8 +350,8 @@ if(isset($_SESSION["cart_session"]))
 						<h2>Information</h2>
 						<ul>
 							<li><a href="#" title="Privacy Policy">Privacy Policy</a></li>
-							<li><a href="#" title="Contact Us">Contact Us</a></li>
-							<li><a href="#" title="Log In">Log In</a></li>
+							<li><a href="contact.php" title="Contact Us">Contact Us</a></li>
+							<li><a href="Sign In.php" title="Log In">Log In</a></li>
 							<li><a href="#" title="Account">Account</a></li>
 
 						</ul>
@@ -359,10 +359,10 @@ if(isset($_SESSION["cart_session"]))
 					<div class="box last-box">
 						<h2>Categories</h2>
 						<ul>
-							<li><a href="#" title="Paper">Paper</a></li>
-							<li><a href="#" title="Plastic">Plastic</a></li>
-							<li><a href="#" title="Glass">Glass</a></li>
-							<li><a href="#" title="Wood">Wood</a></li>
+							<li><a href="warehouse_1.php" title="Paper">Paper</a></li>
+							<li><a href="warehouse_2.php" title="Plastic">Plastic</a></li>
+							<li><a href="warehouse_3.php" title="Glass">Glass</a></li>
+							<li><a href="warehouse_4.php" title="Wood">Wood</a></li>
 						</ul>
 					</div>
 					<div class="cl">&nbsp;</div>
