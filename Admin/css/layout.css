@@ -94,7 +94,7 @@ margin-right: 1%;
  float:right; 
 }
 nav ul li a {
-    color: blue;
+    color: #fa5400;
     display: block;
     font-size: 11px;
     font-weight: bold;
@@ -113,7 +113,7 @@ nav ul li a:hover, nav ul li.selected a {
 
 nav li > a:hover {
     /* css3 animation */
-    -moz-animation-name: animation1;
+    /* -moz-animation-name: animation1;
     -moz-animation-duration: 0.7s;
     -moz-animation-timing-function: linear;
     -moz-animation-iteration-count: infinite;
@@ -129,7 +129,7 @@ nav li > a:hover {
     -webkit-animation-direction: normal;
     -webkit-animation-delay: 0;
     -webkit-animation-play-state: running;
-    -webkit-animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards; */
 }
 
 
@@ -1298,7 +1298,7 @@ font-size: 14px;}
     display:block;
 }
 
-}
+
 
 .a-btn:hover{
     background:#fff;

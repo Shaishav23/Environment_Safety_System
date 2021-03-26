@@ -7,7 +7,7 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8"/>
-	<title>Suncart I Admin </title>
+	<title>Admin </title>
 	
 	<link rel="stylesheet" href="css/layout.css" type="text/css" media="screen" />
 	<!--[if lt IE 9]>
@@ -66,7 +66,7 @@
 		<div id="logo-banner">
 		   
 				<div id="logo">
-				<a href="index.php"><img src="images/main-logo-1.png" alt="" /></a>
+				<a href="index.php"><img src="images/main-logo.png" alt="" /></a>
 				</div>
 				
 				<div id="banner">

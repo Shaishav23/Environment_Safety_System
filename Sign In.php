@@ -30,7 +30,7 @@
 
 					
 
-				 <h1><p> <a href="Sign In.php"><img src="images/main-logo-1.png" alt="" /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>Environment Safety System<strong>Login Form</strong> <span>Please Login Or Sign Up </span></p> </h1>
+				 <h1><p> <a href="Sign In.php"><img src="images/main-logo-1.png" alt="Environment Safety System" width="160" height="80" /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>Environment Safety System Login Form <span>Please Login Or Sign Up </span></p> </h1>
 				
 				
 			</header>

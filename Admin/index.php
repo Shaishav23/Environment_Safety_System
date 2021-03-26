@@ -7,7 +7,7 @@ include("../session.php");
 
 <head>
 	<meta charset="utf-8"/>
-	<title> Environment Safety System I Admin </title>
+	<title>Admin </title>
 <link href="css/bootstrap.min.css" rel="stylesheet" />
       <link href="css/bootstrap.min.css" rel="stylesheet" />
 	<link rel="stylesheet" href="css/layout.css" type="text/css" media="screen" />
@@ -136,7 +136,7 @@ $(document).ready(function() {
 		   
 				<div id="logo">
 					
-					<a href="index.php"><img src="images/main-logo-1.png" alt="" /></a>
+					<a href="index.php"><img src="images/main-logo.png" alt="" /></a>
 				</div>
 				
 				<div id="banner">
